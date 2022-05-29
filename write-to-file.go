@@ -24,7 +24,3 @@ func WriteToFile() {
 
 	f.Sync()
 }
-
-// func main() {
-//     WriteToFile()
-// }
