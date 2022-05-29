@@ -7,7 +7,7 @@ import (
 	"github.com/r3labs/diff"
 )
 
-func TestDiff() diff.Changelog {
+func DiffLibrary() diff.Changelog {
 	from := make(map[string]map[string]string)
 	item_a_from := map[string]string{"hello": "world"}
 	from["a"] = item_a_from
@@ -23,7 +23,7 @@ func TestDiff() diff.Changelog {
 }
 
 func main() {
-	result := TestDiff()
+	result := DiffLibrary()
 	fmt.Printf("result: %v\n", result)
 	b, err := json.Marshal(result)
 	if err != nil {
