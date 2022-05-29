@@ -19,4 +19,3 @@ To build a binary and run:
 go build program.go
 ./program
 ```
-
