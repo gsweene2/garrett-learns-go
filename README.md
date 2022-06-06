@@ -1,5 +1,9 @@
 # Garrett Learns Go
 
+Published on [docs.garrettsweeney.com](docs.garrettsweeney.com)
+
+## About
+
 Each file is a concept or example of something, with test cases.
 
 Many examples are built from [gobyexample.com](https://gobyexample.com/) or [Learn Go with tests](https://quii.gitbook.io/learn-go-with-tests), but modified for my understanding.
@@ -18,4 +22,10 @@ To build a binary and run:
 ```
 go build program.go
 ./program
+```
+
+## Update docs
+
+```python
+python convert-to-md.py
 ```
