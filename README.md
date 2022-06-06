@@ -1,6 +1,6 @@
 # Garrett Learns Go
 
-Published on [docs.garrettsweeney.com](docs.garrettsweeney.com)
+Published on [docs.garrettsweeney.com](https://docs.garrettsweeney.com)
 
 ## About
 
