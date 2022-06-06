@@ -17,11 +17,14 @@ func GetS3Client() *s3.S3 {
 	return svc
 }
 
-// Created soely for the purpose of testing
-// During the test, I need to mock the object passed into AwsSdkCountObjectsInBucket
-// If it is *s3.S3, all functions would need to be mocket
-// With a defined interface, only the method used needs to be mocked
-// As long as the object of type *s3.S3 is passed implements ListObjectsV2, this works
+/*
+	S3ServiceInterface created for the purpose of testing
+	When testing AwsSdkCountObjectsInBucket, I need to mock the `svc` parameter
+	If I defined `svc` of type *s3.S3, all *s3.S3 functions need to be mocked
+	By creating an interface, I can only define functions I use
+	Thus, only the functions I use have to be mocked
+	And an argument of type *s3.S3 would satisfy the interface
+*/
 type S3ServiceInterface interface {
 	ListObjectsV2(input *s3.ListObjectsV2Input) (*s3.ListObjectsV2Output, error)
 }
