@@ -1,7 +1,6 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 
 	"github.com/r3labs/diff"
@@ -22,14 +21,14 @@ func DiffLibrary() diff.Changelog {
 	return changelog
 }
 
-func main() {
-	result := DiffLibrary()
-	fmt.Printf("result: %v\n", result)
-	b, err := json.Marshal(result)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	fmt.Printf("result as json: %v\n", result)
-	fmt.Println(string(b))
-}
+// func main() {
+// 	result := DiffLibrary()
+// 	fmt.Printf("result: %v\n", result)
+// 	b, err := json.Marshal(result)
+// 	if err != nil {
+// 		fmt.Println(err)
+// 		return
+// 	}
+// 	fmt.Printf("result as json: %v\n", result)
+// 	fmt.Println(string(b))
+// }
